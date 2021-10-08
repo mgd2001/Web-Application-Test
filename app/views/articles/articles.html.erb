@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<HTML lang="en">
+        <header><a href="home">Home</a>
+            <h1>Articles Page</h1>
+                <p>Check out these articles: </p>
+                <table>
+                    <thread>
+                        <tr>
+                            <th>Title</th>
+                            <th>Description</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thread>
+                    
+                    <tbody>
+                        <% @articles.each do |article| %>
+                            <tr>
+                                <td><%= article.title %></td>
+                                <td><%= article.description %></td>
+                                <td>Placeholder</td>
+                            </tr>
+                        <% end %>
+                    </tbody>
+                </table>
+        </header>
